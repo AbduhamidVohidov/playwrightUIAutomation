@@ -91,7 +91,7 @@ async dateFromToday() {
     }
     await this.page.locator(this.fromInput).click();
    
-    for (let i = 0; i < this.randomYearNumber2; i++) {
+    for (let i = 0; i < this.randomYearNumber; i++) {
       await this.page.locator(this.prevYear).click();
     }
     let year = await this.page.locator(this.dateOfTheYear).textContent();
